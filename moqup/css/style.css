@@ -42,9 +42,7 @@ button {
   width: auto; 
   overflow: visible;
 }
-/*
-	Clearfix
-*/
+/*Clearfix*/
 
 .row:after,
 .clearfix:after { 
@@ -70,8 +68,12 @@ header, footer{
 header nav{
 	text-align: right
 }
-header a, header a:hover{
+header a, header a:hover, header span{
 	color:white;
+}
+header h1{
+	color: white;
+	text-align: center;
 }
 
 
@@ -162,6 +164,14 @@ h1{
     overflow: hidden;
     margin-bottom: 20px;
 }
+.box{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	border:1px solid #bec4d0;
+	background: white;
+	padding: 10px;
+}
 .register{
 	margin: 0 auto;
 }
@@ -180,23 +190,10 @@ h1{
 
 }
 
-.register .btnSend, .register .btnFacebook{
-	display: inline-block;
-	color: white;
-	padding:0 10px; 
-	height: 30px;
-	border:0;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px; 
+.register form div{
 	margin-bottom: 10px;
 }
-.btnSend{
-	background: orange;
-}
-.btnFacebook{
-	background: blue;
-}
+
 /*footer*/
 footer{
 	background: #00468C;
