@@ -1,0 +1,211 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: arial,helvetica;
+}									
+html {overflow-y: scroll;}
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+img, object, embed {
+  display: block;
+}
+ul, li, ol {
+  list-style: none;
+}
+a{text-decoration: none;}
+a:hover, 
+a:active {
+  outline: none;
+}
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+button, 
+input, 
+select, 
+textarea {
+  margin: 0;
+}
+button {
+  width: auto; 
+  overflow: visible;
+}
+/*
+	Clearfix
+*/
+
+.row:after,
+.clearfix:after { 
+  clear: both; 
+}  
+.row,
+.clearfix { 
+  zoom: 1; 
+}  
+
+.layout, header > div{
+	margin: 0 auto;
+}
+
+
+/*Estilos header*/
+header, footer{
+	background: #00468C;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+header nav{
+	text-align: right
+}
+header a, header a:hover{
+	color:white;
+}
+
+
+/*slider*/
+.slider{
+	position: relative;
+	z-index: 2;
+}
+.slider > img{
+	width: 100%;
+}
+
+/*training*/
+.training article{background-color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	border:1px solid #bec4d0;
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
+	height: 300px;
+	overflow: hidden;
+}
+.training article .detail{
+   position: absolute;
+    bottom: 50%;
+    margin-bottom: -38px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+}
+.training article .back{
+	width: auto;
+    min-height: 300px;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.training article .detail p, h2{
+	color: white;
+}
+.training article .detail p{
+	font-size: 16px;
+}
+.training article .detail h2{
+	font-size: 22px;
+}
+.training article img{
+	width: auto;
+    display: block;
+    min-height: 300px;
+    min-width: 100%;
+}
+.training article h2{
+	position: absolute;
+    z-index: 1;
+    color: white;
+    bottom: 50%;
+    vertical-align: middle;
+    left: 50%;
+    margin-left: -82px;
+}
+h1{
+	text-align: left;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.flex-container {
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.flex-item {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.register{
+	margin: 0 auto;
+}
+.register form{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	border:1px solid #bec4d0;
+	background: white;
+	padding: 10px;
+}
+.register form label, .register form input{
+	
+	width: 430px;
+    margin-bottom: 7px;
+
+}
+
+.register .btnSend, .register .btnFacebook{
+	display: inline-block;
+	color: white;
+	padding:0 10px; 
+	height: 30px;
+	border:0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	margin-bottom: 10px;
+}
+.btnSend{
+	background: orange;
+}
+.btnFacebook{
+	background: blue;
+}
+/*footer*/
+footer{
+	background: #00468C;
+	margin-top: 20px;
+}
+footer >div{
+	width: 960px;
+	margin:0 auto;
+}
+footer >div .colLeft, footer >div .colRight{
+	display: inline-block;
+}
